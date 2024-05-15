@@ -1,0 +1,28 @@
+<div class="text-white bg-gray-900 lg:py-40 lg:pt-0">
+  <div class="container">
+    <div class="text-xl font-bold text-center text-balance mx-auto md:max-w-4xl">
+      {{ header | safe }}
+    </div>
+  </div>
+  <div class="container flex flex-row flex-wrap justify-center content-around">
+    {% for box in boxes %}
+      {% set data = box | split(pat="/") %}
+      <div class="w-full sm:w-1/2 md:w-2/5 text-black bg-white text-center shadow-lg rounded-lg m-4 p-12">
+        <img
+          class="mx-auto mb-4 lg:mb-8 opacity-90 w-24 h-24 lg:w-32 lg:h-32"
+          src="{{ config.base_url ~ images[loop.index0] }}"
+        >
+
+        {# Box titles
+        <div class="text-lg font-bold leading-tight mb-4">
+          {{ data.0 | trim() }}
+        </div>
+        #}
+
+        <div class="text-lg font-semibold leading-tight mb-4">
+          {{ data.1 | trim() }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,3 @@
+name = "SODA base components"
+description = "Shared components across SODA sites"
+min_version = "0.18.0"

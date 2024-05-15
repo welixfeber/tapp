@@ -1,11 +1,14 @@
 # The URL the site will be built for
-base_url = "https://handbook.soda-lab.org"
+base_url = "https://assured-training.org/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+# Theme
+theme = "soda-base"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -14,11 +17,12 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-site_title = ""
-site_logo = ""
-site_logo_alt = ""
-site_logo_sr = ""
-site_tagline = ""
-copyright = ""
-header_cta = ""
-header_cta_href = ""
+site_title = "Assured"
+site_logo = "assets/logo.svg"
+site_logo_alt = "Assured logo"
+site_logo_sr = "Assured"
+site_tagline = "Safe research by safe people"
+copyright = "2024&ndash; Assured collaboration. All rights reserved."
+# Additional call to action in site navigation
+#header_cta = "Contact"
+#header_cta_href = "contact"

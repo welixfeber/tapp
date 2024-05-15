@@ -1,5 +1,5 @@
-<header class="bg-white">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+<header class="">
+  <nav class="mx-auto flex container-width items-center justify-between p-6 lg:px-8" aria-label="Global">
     <a href="{{ config.base_url }}" class="-m-1.5 p-1.5">
       <span class="sr-only">{{ config.extra.site_logo_sr }}</span>
       <img class="h-10 w-auto" src="{{ config.base_url ~ config.extra.site_logo }}" alt="{{ config.extra.site_logo_alt }}">
@@ -18,14 +18,14 @@
         {%- for nav_page in root.pages -%}
           {#- Filter pages not meant for main nav -#}
           {%- if nav_page.extra.main_nav | default(value=true) != false -%}
-            <a href="{{ nav_page.permalink | safe }}" class="text-sm font-semibold leading-6 text-gray-900{% if current_url == nav_page.permalink %} active{% endif %}">
+            <a href="{{ nav_page.permalink | safe }}" class="text-sm leading-6 text-gray-900{% if current_url == nav_page.permalink %} active{% endif %}">
               {{ nav_page.title }}
             </a>
           {%- endif -%}
         {%- endfor -%}
       {% endif %}
       {% if config.extra.header_cta -%}
-        <a href="{{ config.base_url ~ config.extra.header_cta_href }}" class="text-sm font-semibold leading-6 text-gray-900">
+        <a href="{{ config.base_url ~ config.extra.header_cta_href }}" class="text-sm leading-6 text-gray-900">
           {{ config.extra.header_cta }}
         </a>
       {%- endif %}
@@ -54,7 +54,7 @@
               {% for nav_page in root.pages %}
                 {#- Filter pages not meant for main nav -#}
                 {%- if nav_page.extra.main_nav | default(value=true) != false -%}
-                  <a href="{{ nav_page.permalink | safe }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  <a href="{{ nav_page.permalink | safe }}" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">
                     {{ nav_page.title }}
                   </a>
                 {%- endif -%}
@@ -63,7 +63,7 @@
           </div>
           {% if config.extra.header_cta -%}
             <div class="py-6">
-              <a href="{{ config.base_url ~ config.extra.header_cta_href | safe }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <a href="{{ config.base_url ~ config.extra.header_cta_href | safe }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 text-gray-900 hover:bg-gray-50">
                 {{ config.extra.header_cta }}
               </a>
             </div>
