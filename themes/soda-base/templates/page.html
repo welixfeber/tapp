@@ -1,26 +1,9 @@
 {% extends "base.html" %}
-{% import "macros/media.html" as media %}
 
 {% block body %}
   {% include "partials/header.html" %}
-  <div class="my-4 lg:my-8">
-    {% if page.extra.header_image %}
-      <div
-        class="container my-6 bg-contain rounded-md"
-        style="background: center / cover no-repeat {{ media::image_set(img=page.extra.header_image, widths=[1920]) }}, black"
-        {#- More background resolutions would be nice, see media macros -#}
-      >
-        <div
-          class="container-mini text-white p-8 text-2xl font-bold"
-          style="text-shadow: 0 0 1em black;"
-        >
-          {{ page.title }}
-        </div>
-      </div>
-    {% endif %}
-    <main class="container-mini p-8 prose">
-      {% include "partials/main.html" %}
-    </main>
-  </div>
+  <main class="container prose">
+    {% include "partials/main.html" %}
+  </main>
   {% include "partials/footer.html" %}
 {% endblock %}

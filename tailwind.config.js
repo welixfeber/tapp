@@ -2,10 +2,10 @@
 module.exports = {
   theme: {
     fontSize: {
-      sm: '1.1rem',
-      base: '1.25rem',
-      lg: '1.75rem',
-      xl: '2rem',
+      sm: '1.5rem',
+      base: '2rem',
+      lg: '2.5rem',
+      xl: '3rem',
       '2xl': '4rem',
       '3xl': '6rem',
     },
@@ -14,7 +14,7 @@ module.exports = {
         sans: ['"Krub"'],
       },
       colors: {
-        accent: '#459f9d',
+        accent: '#071A2D',
       },
     },
   },

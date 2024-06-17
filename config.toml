@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://assured-training.org/"
+base_url = "https://felixhenninger.github.io/tapp/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -17,12 +17,13 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-site_title = "Assured"
-site_logo = "assets/logo.svg"
-site_logo_alt = "Assured logo"
-site_logo_sr = "Assured"
-site_tagline = "Safe research by safe people"
-copyright = "2024&ndash; Assured collaboration. All rights reserved."
+site_title = "Transatlantic Privacy Perceptions"
+site_logo = "assets/logo_full.svg"
+site_logo_footer = "assets/mark_white.svg"
+site_logo_alt = "TAPP panel logo"
+site_logo_sr = "TAPP panel logo"
+site_tagline = ""
+copyright = "2024&ndash; Transatlantic Privacy Perceptions. All rights reserved."
 # Additional call to action in site navigation
 #header_cta = "Contact"
 #header_cta_href = "contact"

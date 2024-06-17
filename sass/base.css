@@ -13,13 +13,26 @@ body {
   @apply text-base;
 }
 
+.container-width {
+  @apply w-full;
+}
 .container {
-  @apply mx-auto w-full max-w-7xl px-6 py-10 lg:px-8;
+  @apply container-width px-6 py-10 lg:px-8;
 }
 .container-mini {
   @apply mx-auto w-full max-w-3xl;
 
   .container-escape {
     @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
   }
 }
