@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['"Krub"'],
+        sans: ['"Assistant Variable"'],
       },
       colors: {
         accent: '#071A2D',
