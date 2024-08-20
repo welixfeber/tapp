@@ -1,0 +1,79 @@
+
+[[accordion]]
+visible = "Why did you ask me to be part of the panel?"
+hidden = "We consider you to be an influential voice in debates and conversations about privacy. Your thoughts and outlook on current and emerging digital privacy issues will help us identify trends that can be used to inform policy and technological design."
+
+[[accordion]]
+visible = "What will be done with my responses?"
+hidden = """Data collected through the TAPP panel survey is protected in line with EU GDPR. Your responses will be analyzed in a confidential and aggregated manner and only for the purpose of this project. In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset.
+
+Only the researchers affiliated with the project will have access to your responses to a qualitative interview.
+
+Data published in reports will be aggregated and will not individually identify you or your responses. If you are taking part in a qualitative interview or follow-up in-depth survey, you will have the choice not to be quoted at all, to be quoted anonymously, or to have quotations attributed to you.
+"""
+
+[[accordion]]
+visible = "What can I do to be more involved in this project?"
+hidden = """You are welcome to share this project and its results with your network. If you know someone who you think should be part of the panel, please contact us or encourage them to reach out at info@privacyperceptions.org. If you are interested in taking part in an in-depth interview, please reach out to info@privacyperceptions.org."""
+
+
+
+[[accordion]]
+visible = "Who should I contact with questions about this project?"
+hidden = "Don’t hesitate to contact our team at info@privacyperceptions.org with any questions."
+
+
+
+[[accordion]]
+visible = "Who is funding this research?"
+hidden = "TAPP is supported by research grants from Meta, the U.S. Census Bureau, and the Volkswagen Foundation. Research is being conducted entirely independently of any funding sources. An independent scientific advisory board provides guidance and strategic input to the TAPP research team."
+
+[[accordion]]
+visible = "What is a panelist?"
+hidden = """<a target="_blank" href='/engage'>Go to engage</a>
+easy
+some more things that might be needed.
+""""
+
+[[accordion]]
+visible = "What is an advisory board?"
+hidden = ""
+
+[[accordion]]
+visible = "Who can answer the questionnaire?"
+hidden = ""
+
+[[accordion]]
+visible = "Can I suggest a question for the next questionnaire?"
+hidden = ""
+
+[[accordion]]
+visible = "Can I use the data for my personal use?"
+hidden = ""
+
+[[accordion]]
+visible = "How can I use the data?"
+hidden = ""
+
+
+[[accordion]]
+visible = "How can I participate?"
+hidden = ""
+
+[[accordion]]
+visible = "I’ve received a TAPP invitation. Now what?"
+hidden =  ""
+
+[[accordion]]
+visible = "What is TAPP’s privacy and data protection policy?"
+hidden =  ""
+
+
+[[accordion]]
+visible = "I don’t want to participate anymore. How can I leave the panel?"
+hidden =  ""
+
+
+
+
+

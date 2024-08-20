@@ -1,0 +1,54 @@
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    {% set id= now() | date(format="%6f") %}<!-- generates random id to avoid conflict with multiple carousel in the same page-->
+    
+<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} relative">
+    
+    {% if title %}
+    <h3 class="uppercase text-sm block font-bold mb-12 w-full">{{title}}</h3>
+    {% endif %}
+
+    <div class="text-xl leading-tight w-full lg:w-1/2 pl-0 lg:pr-8  mb-10 lg:mb-0">
+        {% set data = load_data(path=data_path) %}
+        <div class="embla overflow-hidden" id="carousel-{{id}}">
+            <div class="embla__container flex">
+                {%- for slide in data.testimony %}
+ 
+                <div class="embla__slide min-w-0 flex-[0_0_100%]">
+                    <div class="text-xl lg:text-2xl leading-tight mb-8">{{slide.quote}}</div>
+                    <div class="text-base">{{slide.name}}</div>
+
+                </div>
+
+
+                {% endfor %}
+            </div>
+            <div class="absolute right-0 top-0 ">
+                <div class="pt-16 pr-6 md:pt-16 lg:pr-24 xl:pt-24 flex w-full -mt-4 space-between">
+                    <div class="embla__button--prev rounded-full left-arrow pl-2 cursor-pointer w-12 h-12 inline-block -scale-x-100 hover:bg-grey">&#10132</div>
+                    <div class="embla__button--next rounded-full right-arrow cursor-pointer w-12 h-12 inline-block hover:bg-grey">&#10132;</div>
+            
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="w-full lg:w-1/2 pl-0 lg:pl-8 {% if right_bg_color %}bg-{{right_bg_color}}{% endif %}">{%if body %}{{ body | markdown  | safe   }}{% endif %}</div>
+
+</div>
+<script type="text/javascript">
+const emblaNode_{{id}} = document.querySelector('#carousel-{{id}}');
+const viewportNode_{{id}} = emblaNode_{{id}}.querySelector('.embla__viewport');
+const prevBtn_{{id}} = emblaNode_{{id}}.querySelector('.embla__button--prev');
+const nextBtn_{{id}} = emblaNode_{{id}}.querySelector('.embla__button--next');
+const options_{{id}} = {loop: true};
+const plugins_{{id}} = [EmblaCarouselAutoplay({})];
+const emblaApi_{{id}} = EmblaCarousel(emblaNode_{{id}}, options_{{id}}, plugins_{{id}});
+
+
+prevBtn_{{id}}.addEventListener('click',function(){ emblaNode_{{id}}.scrollPrev;
+    console.log("ei")}, false);
+nextBtn_{{id}}.addEventListener('click', emblaNode_{{id}}.scrollNext, false);
+//console.log(emblaApi.slideNodes()) // Access API
+
+</script>

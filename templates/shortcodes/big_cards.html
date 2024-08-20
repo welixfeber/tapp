@@ -1,0 +1,45 @@
+{% import "macros/media.html" as media %}
+ {% set data = load_data(path=data_path) %}
+
+<div class="container-escape  flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %}">
+    {% if title %}
+        <h3 class="uppercase text-sm font-bold mb-12 w-full ">{{title}}</h3>
+    {% endif %}
+    {%- for card in data.card %}
+    <div class="text-left px-2 my-2 w-full md:w-1/2 ">
+        <div class="p-8 pt-10 lg:p-12 pb-12 lg:pb-14 h-full flex flex-col {% if card_bg %}bg-{{card_bg}}{%endif%}">
+        {% if image_path %} 
+            {% if card.image %}
+            {{-
+      media::picture_fill_square(
+        img=image_path ~ card.image,
+        widths=[320, 640],
+        class="rounded-full mt-auto mx-auto",
+        attrs="width='320' height='320'"
+      )
+            }} 
+            {%- endif %}
+        {% endif %}
+            {% if card.title %}
+            <div class="text-lg text-semibold leading-none uppercase text-balance mb-12 {%if title_color%}text-{{title_color}}{% endif %}">
+                {{ card.title }}
+            </div>
+            {% endif %}
+              {% if card.description %}
+            <div class="text-balance">
+                {{ card.description }}
+            </div>
+            {% endif %}
+            {% if card.button_link %}
+            <div class="">
+                <a class="mt-14 p-4 inline-block {% if color and card_bg %}text-{{card_bg}} bg-{{color}}{% else%}border{% endif %}" href="{{card.button_link}}">
+               {% if card.button_link %}{{ card.button_text }}{% else %}{{ card.button_link }}{% endif %}
+                </a>
+            </div>
+            {% endif %}
+            
+            
+        </div>
+    </div>
+    {% endfor -%}
+</div>

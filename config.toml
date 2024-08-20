@@ -19,6 +19,9 @@ highlight_code = false
 # Put all your custom variables here
 site_title = "Transatlantic Privacy Perceptions"
 site_logo = "assets/logo_full.svg"
+site_logo_1 = "assets/tapp_logo_white_1.svg"
+site_logo_2 = "assets/tapp_logo_white_2.svg"
+site_logo_3 = "assets/tapp_logo_white_3.svg"
 site_logo_footer = "assets/mark_white.svg"
 site_logo_alt = "TAPP panel logo"
 site_logo_sr = "TAPP panel logo"
@@ -27,3 +30,6 @@ copyright = "2024&ndash; Transatlantic Privacy Perceptions. All rights reserved.
 # Additional call to action in site navigation
 #header_cta = "Contact"
 #header_cta_href = "contact"
+
+
+hero_image="assets/hero.png"

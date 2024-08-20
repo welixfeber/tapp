@@ -1,0 +1,6 @@
+<div class="{% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %}">
+    {% if title %}
+    <h3 class="uppercase text-sm font-bold mb-12 w-full">{{title}}<h3>
+    {% endif %}
+    {{ body | markdown | safe   }}
+</div>

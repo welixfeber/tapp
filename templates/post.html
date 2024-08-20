@@ -1,0 +1,42 @@
+
+{% block content %}
+
+
+{% if page %}
+    {% if page.extra.full_hero %} 
+        {% set full="h-screen items-center" %}
+        {% set m_cont="mt-[100vh]" %}
+    {% else %}
+        {% set full="h-[260px] items-end"%}
+        {% set m_cont="mt-[260px]"%}
+    {% endif %}
+{% elif section %}
+    {% if section.extra.full_hero %} 
+        {% set full="h-screen items-center"%}
+        {% set m_cont="mt-[100vh]"%}
+    {% else %}
+        {% set full="h-[260px] items-end"%}
+        {% set m_cont="mt-[260px]"%}
+    {% endif %}
+ {% endif %}
+<div
+    class="hero text-white flex fixed w-full -z-10 {{full}}"
+    style="background: url(/{{ config.extra.hero_image }});background-size:cover;">
+    <h1 class="text-lg px-14 lg:px-16 pt-8 pb-8">{% if page %}{{ page.title | linebreaksbr | safe  }}{% elif section %}{{ section.title | linebreaksbr | safe  }}{% endif %}</h1>
+</div>
+<div class="pt-12 {{m_cont}} bg-white z-20">
+{% if page %}
+
+{{ page.content | safe }}
+{% elif section %}
+{# The global /_index.md uses this template #}
+{{ section.content | safe }}
+
+{% for post in section.pages %}
+  <div><h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1><div>{{post.date}}</div></div>
+{% endfor %}
+{% else %}
+Unspecified content type
+{% endif %}
+{% endblock %}
+</div>

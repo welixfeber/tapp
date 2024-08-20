@@ -36,3 +36,69 @@ header {
     font-weight: 600;
   }
 }
+h1{
+    @apply text-xl font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-16 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
