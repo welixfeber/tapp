@@ -62,13 +62,19 @@
                         {% for nav_page in root.pages %}
                         {#- Filter pages not meant for main nav -#}
                         {% if nav_page.extra.main_nav %}
-                        <a href="{% if current_url != nav_page.permalink %}{{ nav_page.permalink | safe }}{% else%}#{% endif %} class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                        {% if current_url != nav_page.permalink %}
+                        <a href="{{ nav_page.permalink | safe }}" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            {{ nav_page.title }}
+                        </a>
+                        {% else%}
+                        <a href="#" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-accent">
                             {{ nav_page.title }}
                         </a>
                         {% endif %}
+                        {% endif %}
                         {% endfor %}
                         {% endif %}
-                        <a href="{{config.base_url}}/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+                        <a href="{{config.base_url}}/news" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold   {% if current_url == config.base_url~'/news' %}text-accent{% else%}text-gray-900 hover:text-accent{%endif%}">News</a>
                     </div>
                     {% if config.extra.header_cta -%}
                     <div class="py-6">
