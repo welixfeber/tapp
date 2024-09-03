@@ -41,9 +41,12 @@
   
                
             </div>
-            <div class="absolute right-0 top-0 flex w-20 space-between">
-            <div class="embla__button--prev rounded-full left-arrow cursor-pointer w-2 h-2 inline-block hover:bg-grey">&#10132</div>
-            <div class="embla__button--next rounded-full right-arrow cursor-pointer inline-block hover:bg-grey">&#10132;</div>
+             <div class="absolute right-0 top-0 ">
+                <div class="pt-24 pr-6 md:pt-pt24 lg:pr-24 xl:pt-24 flex w-full -mt-4 space-between">
+                    <div class="embla__button--prev rounded-full left-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block -scale-x-100 hover:bg-grey">&#10132</div>
+                    <div class="embla__button--next rounded-full right-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block hover:bg-grey">&#10132;</div>
+            
+                </div>
             </div>
         </div>
         
@@ -63,9 +66,8 @@ const plugins_{{id}} = [EmblaCarouselAutoplay({})];
 const emblaApi_{{id}} = EmblaCarousel(emblaNode_{{id}}, options_{{id}}, plugins_{{id}});
 
 
-prevBtn_{{id}}.addEventListener('click',function(){ emblaNode_{{id}}.scrollPrev();
-    console.log("ei")}, false);
-nextBtn_{{id}}.addEventListener('click', emblaNode_{{id}}.scrollNext, false);
+prevBtn_{{id}}.addEventListener('click', emblaApi_{{id}}.scrollPrev, false);
+nextBtn_{{id}}.addEventListener('click', emblaApi_{{id}}.scrollNext, false);
 //console.log(emblaApi.slideNodes()) // Access API
 
 </script>
