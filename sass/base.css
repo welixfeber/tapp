@@ -62,7 +62,7 @@ li::before{
     
 }
 main > *{
-    @apply py-16 px-6 md:px-16 lg:px-24 xl:px-24;
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
 }
 /*.padding-all{
 @apply px-6 md:px-16 lg:px-24 xl:px-24;
