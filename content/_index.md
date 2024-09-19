@@ -5,16 +5,19 @@ sort_by = "weight"
 extra.full_hero = true
 extra.subtitle="An interdisciplinary research project conducted by a team of researchers in privacy, survey methodology, and complex sampling techniques at the Universities of Maryland and Munich."
 +++
-{{latest_news(
-title="Latest News"
-   data_path="news/news.toml"
-    more_news="news/_index.md"
-)}}
+
 {% block_2c(bg="grey" left_text="The Transatlantic Privacy Perceptions Project (TAPP) is a fully funded, independent research initiative that provides an in-depth analysis of AI and digital privacy perceptions from experts in industry, law, NGOs, and academia across Europe and the USA.") %}
  We, based at the Universities of Maryland and Munich ([see Team](@/people/index.md)), provide survey infrastructure and methodology knowledge to give the experts opportunity to __raise awareness__ about the privacy issues they care about and contribute to scientific research that can __improve policymaking and technological design [add link to DataViz and Findings page]__.  
 
 nitiated in 2022, TAPP has completed four waves of quantitative surveys, a round of in-depth interviews, and is preparing to go into the field with waves 5 and 6 in 2024. With increasing interest in the survey and growing participation rates, we aim to expand our research scope to include regions with emerging privacy debates, such as Africa and Latin America. 
 {% end %}
+
+{{latest_news(
+title="Latest News"
+   data_path="news/news.toml"
+    more_news="news/_index.md"
+)}}
+
 {% block_2c(title="Our mission" left_text="The Transatlantic Privacy Perceptions Project" bg="primary" color="white") %}
 - gives **digital privacy** a voice in the AI era
  
