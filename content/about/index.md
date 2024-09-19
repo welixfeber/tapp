@@ -31,17 +31,23 @@ We prescreen participants to make sure our sample consists of field experts. Par
 {{ anchor(title="Covered Topics")}}
 {% block_2c( left_text="Covered Topics" bg="white")%}
 
-AI regulations
-AI frameworks and guidelines
-Current & emerging topics (e.g., responsible AI).
-Laws & regulations – identifying what is sufficient and what is missing.
-Winners and losers in privacy performance among big tech & government agencies.
-Approaches for protecting digital privacy.
-Privacy Index: Current state & outlook on digital privacy.
+- AI Regulations
+- AI Frameworks and Guidelines
+- Current & Emerging Topics (e.g., Responsible AI).
+- Laws & Regulations – Identifying What Is Sufficient and What Is Missing.
+- Winners and Losers in Privacy Performance Among Big Tech & Government Agencies.
+- Approaches for Protecting Digital Privacy.
+- Privacy Index: Current State & Outlook on Digital Privacy.
 
 {% end %}
 
 {{ anchor(title="Submit a survey question")}}
+{% block_2c( left_text="Submit a Survey Question" bg="accent")%}
+
+We are no longer accepting survey question ideas for Wave 5. However, we are actively collecting ideas for Wave 6. If you have suggestions or would like to collaborate, please contact us. 
+
+{% end %}
+
 
 {{ anchor(title="Join")}}
 {{ 
