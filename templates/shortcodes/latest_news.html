@@ -1,73 +1,78 @@
 <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
-    {% set id= now() | date(format="%6f") %}<!-- generates random id to avoid conflict with multiple carousel in the same page-->
+{% set id= now() | date(format="%6f") %}<!-- generates random id to avoid conflict with multiple carousels on the same page-->
     
-<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} relative">
+<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} relative" style="background-color: #FFD469;">
     
     {% if title %}
     <h3 class="uppercase text-sm block font-bold mb-12 w-full">{{title}}</h3>
     {% endif %}
 
-    <div class="text-xl leading-tight w-full  pl-0 lg:pr-8  mb-10 lg:mb-0">
+    <div class="text-xl leading-tight w-full pl-0 lg:pr-8 mb-10 lg:mb-0">
         {% set data = load_data(path=data_path) %}
         <div class="embla overflow-hidden" id="carousel-{{id}}">
             <div class="embla__container flex">
-               
-
-{% set data = load_data(path=data_path) %}
+                {% set data = load_data(path=data_path) %}
  
                 {%- for news in data.news %}
-                {% if news.pin  %}
-                {% if news.pin== "true"  %}
-                <!--flex-[0_0_100%] flex-[0_0_50%] flex-[0_0_33.333%] for number of sizes per swipe -->
-                <div class="embla__slide min-w-0 flex-[0_0_100%] lg:flex-[0_0_33.333%] px-2" >
-                    <div class="p-8 border rounded-md mb-8 {% if news_bg %}bg-{{news_bg}}{% else %}bg-white{% endif %}">
-                    <div class="text-sm mb-8 inline-block flex justify-between">
-                        <div>  {%if news.by %}<span class="font-bold mb-2 inline-block mr-2">{{news.by}}</span>{% endif %} {{news.date}}</div> 
-                    {% if news.originalurl %}
-                    <div><a class="text-right" href="{{news.originalurl}}" target="_blank">View original Post</a> 
+                {% if news.pin %}
+                {% if news.pin == "true" %}
+                <!-- flex-[0_0_100%] flex-[0_0_50%] flex-[0_0_33.333%] for number of sizes per swipe -->
+                <div class="embla__slide min-w-0 flex-[0_0_100%] lg:flex-[0_0_33.333%] px-2" style="display: flex; flex-direction: column; height: 280px;">
+                    <div class="p-8 border rounded-md bg-white flex-1" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                        <div style="flex-grow: 1; display: flex; flex-direction: column;">
+                            <div class="text-sm mb-2 inline-block flex justify-between">
+                                <div>
+                                    {% if news.by %}
+                                    <span class="font-bold mb-2 inline-block mr-2">{{news.by}}</span>
+                                    {% endif %}
+                                    {{news.date}}
+                                </div>
+                                {% if news.originalurl %}
+                                <div><a class="text-right" href="{{news.originalurl}}" target="_blank">View original Post</a></div>
+                                {% endif %}
+                            </div>
+                            {% if news.title %}
+                            <div class="text-base font-semibold mb-4">{{news.title}}</div>
+                            {% endif %}
+                            <div class="text-sm leading-tight text-content" style="height: 170px; overflow: hidden;">
+                                {{news.anews | markdown | safe }}
+                            </div>
+                        </div>
+                        <div class="dots" style="text-align: center; font-size: 10px; line-height: 0.8; margin-top: auto;">
+                            • • •
+                        </div>
                     </div>
-                        {% endif %}  
-                    </div>
-                   {% if news.title %}
-                    <div class="text-base font-semibold mb-8">{{news.title}}</div>
-                   {% endif %}
-                    <div class="text-sm leading-tight ">{{news.anews | markdown | safe }}</div>
-                    </div>
-                    </div>
+                </div>
                 {% endif %}
                 {% endif %}
                 {% endfor %}
-  
-               
             </div>
-             <div class="absolute right-0 top-0 ">
-                <div class="pt-24 pr-6 md:pt-pt24 lg:pr-24 xl:pt-24 flex w-full -mt-4 space-between">
+            {% if more_news %}
+            <h3 class="uppercase text-sm block font-bold w-full -mb-4" style="line-height: 5;">{{"[View all news](@/" ~ more_news ~ ")"| markdown | safe }}</h3>
+            {% endif %}
+
+            <div class="absolute right-0 top-0 "></div>
+                <div class="pt-24 pr-6 md:pt-pt24 lg:pr-24 xl:pt-24 flex w-full -mt-24 space-between">
                     <div class="embla__button--prev rounded-full left-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block -scale-x-100 hover:bg-grey">&#10132</div>
                     <div class="embla__button--next rounded-full right-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block hover:bg-grey">&#10132;</div>
             
                 </div>
             </div>
         </div>
-        
     </div>
-    {% if more_news %}
-   {{"[View all news](@/" ~ more_news ~ ")"| markdown | safe }}
-    {% endif %}
-
+    
+    
 </div>
+
 <script type="text/javascript">
 const emblaNode_{{id}} = document.querySelector('#carousel-{{id}}');
-const viewportNode_{{id}} = emblaNode_{{id}}.querySelector('.embla__viewport');
 const prevBtn_{{id}} = emblaNode_{{id}}.querySelector('.embla__button--prev');
 const nextBtn_{{id}} = emblaNode_{{id}}.querySelector('.embla__button--next');
-const options_{{id}} = {loop: true, slidesToScroll: 1 };
+const options_{{id}} = { loop: true, slidesToScroll: 1 };
 const plugins_{{id}} = [EmblaCarouselAutoplay({})];
 const emblaApi_{{id}} = EmblaCarousel(emblaNode_{{id}}, options_{{id}}, plugins_{{id}});
 
-
 prevBtn_{{id}}.addEventListener('click', emblaApi_{{id}}.scrollPrev, false);
 nextBtn_{{id}}.addEventListener('click', emblaApi_{{id}}.scrollNext, false);
-//console.log(emblaApi.slideNodes()) // Access API
-
 </script>
