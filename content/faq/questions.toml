@@ -1,28 +1,32 @@
-
 [[accordion]]
 visible = "Why did you ask me to be part of the panel?"
-hidden = "We consider you to be an influential voice in debates and conversations about privacy. Your thoughts and outlook on current and emerging digital privacy issues will help us identify trends that can be used to inform policy and technological design."
+hidden = "We, or someone who knows you professionally, thought that you would provide a unique voice in the TAPP panel!"
 
 [[accordion]]
 visible = "What will be done with my responses?"
-hidden = """Data collected through the TAPP panel survey is protected in line with EU GDPR. Your responses will be analyzed in a confidential and aggregated manner and only for the purpose of this project. In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset.
+hidden = """Data collected through the TAPP panel survey is protected in line with <a href="https://www.qualtrics.com/privacy-statement/">EU GDPR</a> and by the UMD research ethics committee (IRB). In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset.
 
-Only the researchers affiliated with the project will have access to your responses to a qualitative interview.
+Data published in reports are aggregated and will not individually identify you or your responses.
 
-Data published in reports will be aggregated and will not individually identify you or your responses. If you are taking part in a qualitative interview or follow-up in-depth survey, you will have the choice not to be quoted at all, to be quoted anonymously, or to have quotations attributed to you.
-"""
+In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset."""
 
 [[accordion]]
 visible = "What can I do to be more involved in this project?"
-hidden = """You are welcome to share this project and its results with your network. If you know someone who you think should be part of the panel, please contact us or encourage them to reach out at info@privacyperceptions.org. If you are interested in taking part in an in-depth interview, please reach out to info@privacyperceptions.org."""
-
-
+hidden = "Use our data!"
 
 [[accordion]]
 visible = "Who should I contact with questions about this project?"
-hidden = "Don’t hesitate to contact our team at info@privacyperceptions.org with any questions."
+hidden = """To learn more about TAPP panel participation, please refer to the FAQs or <a href="mailto:irb@umd.edu">email</a>.
+If you have questions about your rights as a research participant or wish to report a research-related injury, please contact with reference to IRB No. 1934146-4:
 
+University of Maryland College Park
+Institutional Review Board Office
+1204 Marie Mount Hall
+College Park, Maryland, 20742
+E-mail: <a href="mailto:irb@umd.edu">irb@umd.edu</a>
+Telephone: +1 301-405-0678
 
+For more information regarding your rights as a research participant, please visit the <a href="https://research.umd.edu/research-resources/research-compliance/institutional-review-board-irb/research-participants">UMD IRB FAQs</a>."""
 
 [[accordion]]
 visible = "Who is funding this research?"
@@ -30,18 +34,11 @@ hidden = "TAPP is supported by research grants from Meta, the U.S. Census Bureau
 
 [[accordion]]
 visible = "What is a panelist?"
-hidden = """<a target="_blank" href='/engage'>Go to engage</a>
-easy
-some more things that might be needed.
-""""
-
-[[accordion]]
-visible = "What is an advisory board?"
-hidden = ""
+hidden = "A panelist is anyone who participates in our survey and agrees to be contacted additionally throughout the year to participate in further waves."
 
 [[accordion]]
 visible = "Who can answer the questionnaire?"
-hidden = ""
+hidden = "Anyone aged 18+ living or working in countries/regions on either side of the Atlantic Ocean who is passionate and knowledgeable about digital privacy is invited to join the panel."
 
 [[accordion]]
 visible = "Can I suggest a question for the next questionnaire?"
@@ -53,8 +50,12 @@ hidden = ""
 
 [[accordion]]
 visible = "How can I use the data?"
-hidden = ""
+hidden = """We're currently transferring the anonymized data from our study to GESIS (Leibniz Institute for the Social Sciences), a German institute that handles social science data. The link to the archived data will be shared here once that's done."""
 
+[[accordion]]
+visible = "How many questions are in the questionnaire?"
+hidden = """The number of questions varies by survey wave and questionnaire topic.
+Regardless of the topic, we keep the questionnaires short, so that participating takes no more than 5-10 minutes of your time."""
 
 [[accordion]]
 visible = "How can I participate?"
@@ -62,18 +63,12 @@ hidden = ""
 
 [[accordion]]
 visible = "I’ve received a TAPP invitation. Now what?"
-hidden =  ""
+hidden = """Our panel is unique in regularly bringing together the opinions of a diverse set of privacy experts from a variety of industries and countries. Participating gives you the opportunity to raise awareness about the privacy issues you care about and contribute to <a href="@/results/index.md">scientific research</a>. To get started, simply click 'Start survey' in your invitation email!"""
 
 [[accordion]]
 visible = "What is TAPP’s privacy and data protection policy?"
-hidden =  ""
-
+hidden = """We take privacy and data protection seriously. Below is our data protection statement. This statement is also available from within the current TAPP panel survey. <a href="@/data_protection/index.md">See here</a>."""
 
 [[accordion]]
 visible = "I don’t want to participate anymore. How can I leave the panel?"
-hidden =  ""
-
-
-
-
-
+hidden = """We’re sorry to see you go! Contact us at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a> to request removal from our invitation list. Please be aware that as all data is collected anonymously, we are not able to remove your individual data from previous datasets."""
