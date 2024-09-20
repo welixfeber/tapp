@@ -4,19 +4,10 @@ weight = 5
 extra.full_hero = false
 extra.main_nav = true
 +++
-{% block_2c(left_text="Read Privacy days presentations") %}
-- [Presentation: The Diversity of Transatlantic Stakeholders' Privacy Perceptions](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
+{% block_2c(left_text="Take a look at Privacy Days presentations" bg="accent") %}
+- [The Diversity of Transatlantic Stakeholders' Privacy Perceptions](https://socialdatascience.umd.edu/wp-content/uploads/2023/02/1-TAPP-StakeholderDiversity.pdf)
 
-- [Presentation 2](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
+- [Privacy in Practice – Enhancing Privacy Literacy through an interactive Virtual Assistant (iVA)](https://socialdatascience.umd.edu/wp-content/uploads/2023/02/2-BERD-PrivacyInPractice_iVA.pdf)
 
-- [Transatlantic Stakeholders' Privacy Perceptions](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
-
-{% end %}
-{% block_2c(left_text="Read our data reports" bg="primary",color="white") %}
-- [Presentation: The Diversity of Transatlantic Stakeholders' Privacy Perceptions](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
-
-- [Presentation 2](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
-
-- [Transatlantic Stakeholders' Privacy Perceptions](https://socialdatascience.umd.edu/soda-special-presentation-in-celebration-of-privacy-day/)
-
+- [How to Balance Data Sharing and Data Protection in the Development and Use of Al?](https://www.youtube.com/watch?v=j5kyAcrvz-s)
 {% end %}
