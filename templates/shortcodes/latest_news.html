@@ -32,7 +32,7 @@
                             {% if news.title %}
                             <div class="text-base font-semibold mb-4">{{news.title}}</div>
                             {% endif %}
-                            <div class="text-sm leading-tight text-content" style="height: 170px; overflow: hidden;">
+                            <div class="text-sm leading-tight text-content" style="height: 123px; overflow: hidden;">
                                 {{news.anews | markdown | safe }}
                             </div>
                         </div>
@@ -46,16 +46,20 @@
                 {% endfor %}
             </div>
             {% if more_news %}
-            <h3 class="uppercase text-sm block font-bold w-full -mb-4" style="line-height: 5;">{{"[View all news](@/" ~ more_news ~ ")"| markdown | safe }}</h3>
-            {% endif %}
+                <div class="flex items-center justify-center space-x-4 w-full"> <!-- Flex container for all elements -->
+                    <div class="embla__button--prev rounded-full left-arrow cursor-pointer w-12 h-12 flex items-center justify-center hover:bg-grey" style="transform: scaleX(-1);">
+                        &#10132; <!-- Left arrow (flipped horizontally with CSS class) -->
+                    </div>
 
-            <div class="absolute right-0 top-0 "></div>
-                <div class="pt-24 pr-6 md:pt-pt24 lg:pr-24 xl:pt-24 flex w-full -mt-24 space-between">
-                    <div class="embla__button--prev rounded-full left-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block -scale-x-100 hover:bg-grey">&#10132</div>
-                    <div class="embla__button--next rounded-full right-arrow pl-2 pt-[-2px] cursor-pointer w-12 h-12 inline-block hover:bg-grey">&#10132;</div>
-            
+                    <h3 class="uppercase text-sm font-bold" style="line-height: 5;">
+                        {{ "[View all news](@/" ~ more_news ~ ")" | markdown | safe }}
+                    </h3>
+
+                    <div class="embla__button--next rounded-full right-arrow cursor-pointer w-12 h-12 flex items-center justify-center hover:bg-grey">
+                        &#10132; <!-- Right arrow -->
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         </div>
     </div>
     
