@@ -1,5 +1,5 @@
 +++
-title = "DataVis"
+title = "DataViz"
 weight = 4
 extra.full_hero = false
 extra.main_nav = true
