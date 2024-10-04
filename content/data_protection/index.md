@@ -1,5 +1,5 @@
-stat
-title="Data protection statement"
++++
+title="Data Protection Statement"
 weight=3
 extra.footer_nav=true
 +++
