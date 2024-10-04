@@ -1,29 +1,43 @@
 +++
-title = "People"
-weight = 5
-extra.full_hero = false
-extra.main_nav = true
-#extra.hide_title= true
-extra.sub_nav =["Team","Topic Partner"]
+title="About"
+weight = 1
+extra.main_nav= true
+extra.sub_nav=["Methodology","Previous waves","Covered Topics","Submit a survey question","Join"]
 +++
 
-{% block_1c(title="Who's behind the work" bg="accent") %}
-Our team comprises experts from the most diverse areas and Universities and Institutes.
+{{ anchor(title="Methodology")}}
+{% block_1c(title="Methodology" bg="white")%}
+
+TAPP’s methodology, designed by survey and sampling experts from University of Maryland, USA (UMD) and LMU Munich, Germany, is developed to gather the most robust and insightful data in the field of AI and digital privacy research.
+
+Our survey is a quantitative online questionnaire designed to gather insights on privacy and AI-related issues. It includes single/ multiple-choice and open-ended questions takes just 5 minutes to complete. 
+
+We welcome participation from anyone who is actively engaged in the AI and privacy debate. This includes those active in (social) media, professional events, and members of professional privacy networks like the IAPP. We are interested in hearing from professionals, volunteers, and activists working on AI and privacy issues. 
+
+We prescreen participants to make sure our sample consists of field experts. The survey is anonymous, and results will be shared in aggregate (open-ended answers will be categorized before sharing). Only certified researchers have access to individual data points.
+
 {% end %}
 
-{{ anchor(title="Team")}}
-{{
-  gallery_person(
-    data_path="people/members.toml"
-    image_path="people/"
-  )
+
+{{ anchor(title="Covered Topics")}}
+{% block_1c(title="Covered Topics" bg="accent") %}
+
+- AI Regulations
+- AI Frameworks and Guidelines
+- Current & Emerging Topics (e.g., Responsible AI).
+- Laws & Regulations – Identifying What Is Sufficient and What Is Missing.
+- Winners and Losers in Privacy Performance Among Big Tech & Government Agencies.
+- Approaches for Protecting Digital Privacy.
+- Privacy Index: Current State & Outlook on Digital Privacy.
+
+{% end %}
+
+
+{{ anchor(title="Join")}}
+{{ 
+mailchimp_form(
+top_text="Let's talk about privacy. Join the conversation",
+subscribe_text="I would like to receive email communications from TAPP and agree with the data protection regulations and the described processing of personal data there.",
+action="https://privacyperceptions.us8.list-manage.com/subscribe/post?u=d468acafb21a2d106b0cca2b3&id=2ef607f45a&v_id=3389&f_id=008a99e0f0"
+)
 }}
-{{ anchor(title="Topic Partner")}}
-{% block_1c(title="Topic Partner" bg="accent") %}
-We are excited to introduce the upcoming Topic Partner Program, an initiative designed to enhance the preparation of our annual survey. Individuals from different disciplines can join us as Topic Partners for a one-year term, where they will have the unique opportunity to propose topics and participate in the decision-making process regarding topic submissions.
-
-This collaborative approach ensures that TAPP remains relevant and comprehensive, reflecting a diverse range of perspectives and ideas. By involving Topic Partners, we aim to foster a deeper engagement with our community and enhance the overall quality and impact of our work.
-
-If you are passionate about contributing to meaningful discussions and have expertise in areas relevant to our survey (anyone who is actively engaged in the AI and privacy debate), we encourage you to consider becoming a Topic Partner. Together, we can make a significant difference in gathering and analyzing data that matters.
-
-{% end %}
