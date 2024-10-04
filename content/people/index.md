@@ -19,7 +19,7 @@ Our team comprises experts from the most diverse areas and Universities and Inst
   )
 }}
 {{ anchor(title="Topic Partner")}}
-{% block_1c(title="Topic Partner" bg="primary" color="white") %}
+{% block_1c(title="Topic Partner" bg="accent") %}
 We are excited to introduce the upcoming Topic Partner Program, an initiative designed to enhance the preparation of our annual survey. Individuals from different disciplines can join us as Topic Partners for a one-year term, where they will have the unique opportunity to propose topics and participate in the decision-making process regarding topic submissions.
 
 This collaborative approach ensures that TAPP remains relevant and comprehensive, reflecting a diverse range of perspectives and ideas. By involving Topic Partners, we aim to foster a deeper engagement with our community and enhance the overall quality and impact of our work.
