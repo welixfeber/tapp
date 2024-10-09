@@ -7,8 +7,8 @@ extra.main_nav = true
 extra.sub_nav =["Team","Topic Partner"]
 +++
 
-{% block_1c(title="Who's behind the work" bg="accent") %}
-The Core Scientific Team of TAPP comprises leading researchers and scholars specializing in AI, digital privacy, data analysis, and survey methodology.
+{% block_1c(title="Who's behind the work" bg="accent" style="margin-top: 0px; margin-bottom: 0px;") %} 
+The Core Scientific Team of TAPP comprises leading researchers and scholars specializing in AI, digital privacy, data analysis, and survey methodology. 
 {% end %}
 
 {{ anchor(title="Team")}}
