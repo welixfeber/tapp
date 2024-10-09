@@ -2,7 +2,6 @@
 title="About"
 weight = 1
 extra.main_nav= true
-extra.sub_nav=["Methodology","Previous waves","Covered Topics","Submit a survey question","Join"]
 +++
 
 {{ anchor(title="Methodology")}}
