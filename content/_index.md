@@ -1,13 +1,12 @@
 +++
-title = """Exploring <span class="block md:inline"> Digital Privacy <span class="block md:inline"><span class='test' data-words='Challenges,Attitudes,Perceptions,Trends,Issues' data-shuffle='true'></span>
+title = """Exploring <span class="block md:inline"> AI and Privacy <span class="block md:inline"><span class='test' data-words='Challenges,Attitudes,Perceptions,Trends,Issues' data-shuffle='true'></span>
 with Influential <span class="block md:inline">Voices and <span class="block md:inline">Experts"""
 sort_by = "weight"
 extra.full_hero = true
 +++
 
 {% block_2c(bg="grey" left_text="The Transatlantic Privacy Perceptions Project (TAPP) is a fully funded, independent research initiative that provides in-depth analysis of AI and digital privacy perceptions from experts in industry, law, NGOs, and academia across Europe and the USA.") %}
- Based at the Universities of Maryland and Munich, we ([→ Team](@/people/index.md)), provide survey infrastructure and methodology knowledge to give experts opportunity to __raise awareness__ about the privacy issues they care about and contribute to scientific research that can __improve policymaking and technological design ([→ DataViz](@/results/index.md)) and ([→ Findings](@/findings/index.md))__.
-  
+ We ([→ Team](@/people/index.md)) provide survey infrastructure and methodology knowledge to give experts opportunities to __raise awareness__ about the privacy issues they care about, thereby contributing to public debate and enhancing scientific research that can __improve policymaking and technological design ([→ DataViz](@/results/index.md) and [→ Findings](@/findings/index.md))__.  
 
 Initiated in 2022, TAPP has completed five waves of quantitative surveys, a round of in-depth interviews, and is preparing to go into the field with wave 6 in 2024. With increasing interest in the survey and growing participation rates, we aim to expand our research scope to include regions with emerging privacy debates, such as Africa and Latin America. 
 {% end %}
@@ -18,15 +17,6 @@ title="Latest News"
     more_news="news/_index.md"
 )}}
 
-{% block_2c(title="Our mission" left_text="The Transatlantic Privacy Perceptions Project" bg="primary" color="white") %}
-- gives **digital privacy** a voice in the AI era
- 
-- harvests and channels diverse perspectives
-
-- creates data for public debate and __policy making__
-
-- guides with best practices and identifies role models
-{% end %}
 {%slideshow(
 title="Why participate"
    data_path="testimonies.toml"
