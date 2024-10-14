@@ -46,9 +46,23 @@
                 {% endfor %}
             </div>
             {% if more_news %}
-                <div class="flex items-center justify-center space-x-4 w-full"> <!-- Flex container for all elements -->
-                    <div class="embla__button--prev rounded-full left-arrow cursor-pointer w-12 h-12 flex items-center justify-center hover:bg-grey" style="transform: scaleX(-1);">
-                        &#10132; <!-- Left arrow (flipped horizontally with CSS class) -->
+                <div class="flex items-center justify-center space-x-4 w-full">
+                    <div class="embla__button--prev rounded-full left-arrow cursor-pointer w-12 h-12 flex items-center justify-center hover:bg-grey">
+                        <!-- Left arrow SVG content -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_143_35)">
+                                <path d="M6.73617 3.16308L8.67303 5.09993L3.88964 9.88332L8.71504 14.7087L6.76215 16.6616L-0.000114671 9.89936L6.73617 3.16308Z" fill="#071A2D"/>
+                                <path d="M1.97073 11.3483L18.4191 11.2805L18.4304 8.53007L1.98207 8.5979L1.97073 11.3483Z" fill="#071A2D"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_143_35">
+                                <rect width="14" height="14" fill="white" transform="translate(9.89941 19.7988) rotate(-135)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </svg>
                     </div>
 
                     <h3 class="uppercase text-sm font-bold" style="line-height: 5;">
@@ -56,14 +70,18 @@
                     </h3>
 
                     <div class="embla__button--next rounded-full right-arrow cursor-pointer w-12 h-12 flex items-center justify-center hover:bg-grey">
-                        &#10132; <!-- Right arrow -->
+                        <!-- Right arrow SVG content -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0627 16.6355L11.1259 14.6987L15.9093 9.91526L11.0838 5.08986L13.0367 3.13696L19.799 9.89922L13.0627 16.6355Z" fill="#071A2D"/>
+                                <path d="M17.8282 8.45024L1.37982 8.51807L1.36848 11.2685L17.8168 11.2007L17.8282 8.45024Z" fill="#071A2D"/>
+                                </svg>
+                        </svg>
                     </div>
                 </div>
             {% endif %}
         </div>
     </div>
-    
-    
 </div>
 
 <script type="text/javascript">
