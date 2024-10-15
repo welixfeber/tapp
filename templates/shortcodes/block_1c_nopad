@@ -1,0 +1,7 @@
+<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} w-full px-4 sm:px-8 md:px-16 lg:px-32">
+    {% if title %}
+    <h3 class="text-xl font-bold w-full lg:w-3/5 mx-auto">{{title}}</h3>
+    {% endif %}
+    
+    <div class="text-base leading-tight w-full lg:w-3/5 mx-auto">{% if body %}{{ body | markdown | safe }}{% endif %}</div>
+</div>
