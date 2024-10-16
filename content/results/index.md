@@ -5,7 +5,7 @@ extra.full_hero = false
 extra.main_nav = true
 +++
 {% padded_block(bg="accent") %}
-Below you can read the results of our 4 waves survey.
+Here you can explore TAPP data visualized, both by waves and through our trend analysis. 
 {% end %}
 {{
 shiny_app(url="https://tapp-shiny-app.blackisland-fad2c1bc.germanywestcentral.azurecontainerapps.io/",id="shiny1")
