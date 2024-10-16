@@ -42,7 +42,7 @@ hidden = """Anyone aged 18+ living or working in countries/regions on either sid
 
 [[accordion]]
 visible = "Can I suggest a question for the next questionnaire?"
-hidden = """Of course, send us an email at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a>"""
+hidden = """Of course, send us an email at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a>."""
 
 [[accordion]]
 visible = "How can I use the data?"
