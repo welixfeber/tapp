@@ -21,13 +21,12 @@ We prescreen participants to make sure our sample consists of field experts. The
 {{ anchor(title="Covered Topics")}}
 {% block_1c(title="Covered Topics" bg="accent") %}
 
-- AI Regulations
-- AI Frameworks and Guidelines
-- Current & Emerging Topics (e.g., Responsible AI).
-- Laws & Regulations – Identifying What Is Sufficient and What Is Missing.
-- Winners and Losers in Privacy Performance Among Big Tech & Government Agencies.
-- Approaches for Protecting Digital Privacy.
-- Privacy Index: Current State & Outlook on Digital Privacy.
+- Current state and outlook on digital privacy
+- Winners and losers in privacy performance
+- Approaches for protecting digital privacy
+- AI regulations, frameworks and guidelines
+- Current and Emerging Topics, e.g. Responsible AI
+- Sufficiency and Gaps in Laws and Regulations
 
 {% end %}
 
