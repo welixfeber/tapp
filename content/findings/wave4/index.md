@@ -55,7 +55,7 @@ A total of 895 individuals received email invitations. Of these, 39 returning re
 Wave 4 of the TAPP survey received responses from 77 participants. In terms of professional background, 43% are from academia, and 17% are from the tech industry while 12% are from the private sector, but from non-tech industry (Figure 1). 
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="https://FelixHenninger.github.io/tapp/content/findings/Figure1.png" alt="Figure 1. Respondents composition by sector" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="https://github.com/FelixHenninger/tapp/blob/main/content/findings/Figure1.png" alt="Figure 1. Respondents composition by sector" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 1. Respondents composition by sector</p>
 </div>
 
@@ -63,7 +63,7 @@ Wave 4 of the TAPP survey received responses from 77 participants. In terms of p
 Notably, 45% of respondents have worked in the privacy field for more than 10 years (Figure 2), and only 5% less than a year. The sample includes 48 participants with more knowledge about the European privacy context and  29 of the American context.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="https://FelixHenninger.github.io/tapp/content/findings/Figure2.png" alt="Figure 2. Respondents composition by years of experience with privacy" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="https://raw.githubusercontent.com/FelixHenninger/tapp/refs/heads/main/content/findings/Figure2.png" alt="Figure 2. Respondents composition by years of experience with privacy" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 2. Respondents composition by years of experience with privacy</p>
 </div>
 
