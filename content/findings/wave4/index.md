@@ -55,7 +55,7 @@ A total of 895 individuals received email invitations. Of these, 39 returning re
 Wave 4 of the TAPP survey received responses from 77 participants. In terms of professional background, 43% are from academia, and 17% are from the tech industry while 12% are from the private sector, but from non-tech industry (Figure 1). 
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure1.png" alt="Figure 1. Respondents composition by sector" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure1.png" alt="Figure 1. Respondents composition by sector" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 1. Respondents composition by sector</p>
 </div>
 
@@ -63,7 +63,7 @@ Wave 4 of the TAPP survey received responses from 77 participants. In terms of p
 Notably, 45% of respondents have worked in the privacy field for more than 10 years (Figure 2), and only 5% less than a year. The sample includes 48 participants with more knowledge about the European privacy context and  29 of the American context.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure2.png" alt="Figure 2. Respondents composition by years of experience with privacy" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure2.png" alt="Figure 2. Respondents composition by years of experience with privacy" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 2. Respondents composition by years of experience with privacy</p>
 </div>
 
@@ -74,14 +74,14 @@ Notably, 45% of respondents have worked in the privacy field for more than 10 ye
 The fourth wave of the TAPP survey revealed that a large majority (72%) of respondents reported using AI tools or systems in their work. However, this adoption is not uniform across all regions. 79% of experts about privacy in Europe use AI tools or systems in their work and 19% of them do not, whereas 2% do not know how to answer this question (Figure 3). Following a similar trend but lagging behind, 61% of the experts about privacy in the United States use AI tools or systems in their work while 39% do not, reflecting the importance of AI in modern business operations.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure3.png" alt="Figure 3. Use of AI tools and systems for work" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure3.png" alt="Figure 3. Use of AI tools and systems for work" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 3. Use of AI tools and systems for work</p>
 </div>
 
 However, only 46% in Europe and 39% in US work for organizations that have established specific frameworks or guidelines to govern how AI is implemented and used in the workplace (Figure 4). These frameworks are crucial for ensuring that AI is employed responsibly, ethically, and effectively, addressing issues such as data privacy, fairness, and the impact on employees (Haipeter et al., 2024). Unfortunately, a large portion of experts —17% in Europe and 7% in the US— do not know whether such frameworks or guidelines exist within their organizations.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure4.png" alt="Figure 4. Organizational adoption of AI frameworks and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure4.png" alt="Figure 4. Organizational adoption of AI frameworks and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 4. Organizational adoption of AI frameworks and guidelines</p>
 </div>
 
@@ -98,14 +98,14 @@ A hybrid approach that combines internal and external guidelines may offer the b
 Among those without guidelines, future planning for Responsible AI frameworks is evident, as 45% of experts in Europe and US indicated their organizations plan to implement those frameworks in the future. On average, 30% are still undecided (28% in Europe and 33% in US), and 24% will not implement guidelines (28% in Europe and 20% in US).
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure5.png" alt="Figure 5. Intentions for organizational adoption of Responsible AI frameworks and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure5.png" alt="Figure 5. Intentions for organizational adoption of Responsible AI frameworks and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 5. Intentions for organizational adoption of Responsible AI frameworks and guidelines</p>
 </div>
 
 Creating effective Responsible AI frameworks requires the input of those who will use and enforce them. Employee participation in creating those frameworks ensures that diverse perspectives are considered, leading to more comprehensive and effective guidelines. Encouraging broader involvement in the drafting process can also foster a culture of ethical AI use and accountability within organizations (Haipeter et al, 2024). TAPP provides insights into the involvement of privacy experts in drafting Responsible AI frameworks. Specifically, 50% of respondents are or will be involved in drafting their organization's Responsible AI guidelines, while 7% will not be involved, and 43% are unsure about their involvement.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure6.png" alt="Figure 6. Stakeholder involvement in organizational AI framework and guidelines development" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure6.png" alt="Figure 6. Stakeholder involvement in organizational AI framework and guidelines development" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 6. Stakeholder involvement in organizational AI framework and guidelines development</p>
 </div>
 
@@ -116,7 +116,7 @@ Creating effective Responsible AI frameworks requires the input of those who wil
 According to the survey (Figure 7), privacy concerns affect the use of AI tools or systems, with 52% of respondents in Europe and 57% in the USA reporting that these concerns greatly influence their use. Additionally, 33% and 29% of respondents indicated that privacy concerns somewhat influence their use of AI, suggesting that while they may use AI tools, they do so with certain reservations and safeguards in place. This underscores the urgent need for robust regulation, guidelines, frameworks, and best practices to ensure the safe development, adoption, procurement, and sale of AI technologies. Public and private organizations must be equipped with clear standards to navigate the complex landscape of AI deployment while safeguarding privacy. Moreover, providers of AI technologies should prioritize transparency about the privacy of the data collected through AI tools. Transparent data practices will build trust and allow users to understand how their data is being used and protected (Morey et al., 2015). Conversely, 12% of respondents in Europe and 14% in the US reported that privacy concerns do not affect their use of AI tools at all, indicating that a smaller segment of users either have robust privacy measures already in place or do not view privacy issues as a significant barrier to AI adoption.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure7.png" alt="Figure 7. Privacy concerns for the use of AI tools or systems in their work" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure7.png" alt="Figure 7. Privacy concerns for the use of AI tools or systems in their work" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 7. Privacy concerns for the use of AI tools or systems in their work</p>
 </div>
 
@@ -128,7 +128,7 @@ In 2024, the survey also explored which practices centered around AI privacy are
 Regarding how organizations ensure compliance with AI frameworks and guidelines, wave 4 results show that a notable percentage of privacy experts in both regions (40% in Europe and 67% in the US) believe that individuals or teams will be responsible for ensuring compliance within the organization. Interestingly, 22% of US experts think their existing privacy work will expand to include AI, a perspective shared by 27% of their European counterparts. Additionally, 20% of European experts anticipate the creation of new roles or teams focused on AI, compared to only 11% of US experts. In the US, 11% of experts see external consultants as a solution, whereas none of the European experts share this view. Finally, wave 4 results show that a larger proportion of US privacy experts (39%) are uncertain about their organization's approach to AI compliance, compared to 27% in Europe.
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure8.png" alt="Figure 8. Organizational compliance with AI framework and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure8.png" alt="Figure 8. Organizational compliance with AI framework and guidelines" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 8. Organizational compliance with AI framework and guidelines</p>
 </div>
 
@@ -137,7 +137,7 @@ Regarding how organizations ensure compliance with AI frameworks and guidelines,
 The TAPP survey reveals varying levels of familiarity with Responsible AI principles among privacy experts. Specifically, 37% of respondents (33% in Europe and 43% in the US) are highly familiar with these principles, 53% (54% in Europe and 50% in the US) are somewhat familiar, and 9% (10% in Europe and 7% in the US) are not familiar at all. These results highlight an area for growth and education within the field, emphasizing the need for privacy experts to have a common foundational framework. Responsible AI principles, which stress fairness, transparency, accountability, and ethical considerations in AI development, are crucial for ensuring that these technologies benefit society while minimizing potential harms. As AI continues to advance, aligning privacy expertise with these principles is essential for developing ethical and effective AI systems (Stryker, 2024).
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <img src="/findings/Figure9.png" alt="Figure 9. Awareness of Responsible AI principles" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
+    <img src="../Figure9.png" alt="Figure 9. Awareness of Responsible AI principles" style="display: block; width: 100%; max-width: 75%; margin: 60px auto 0;">
     <p style="font-weight: bold;">Figure 9. Awareness of Responsible AI principles</p>
 </div>
 {% end %}
