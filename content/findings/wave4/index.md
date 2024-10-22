@@ -10,43 +10,47 @@ placeholder
 {% end %}
 
 {% block_1c_nopad(title="Download and Citation" bg="grey" class="mb-0") %}
-<div class="w-full text-left">
-    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
-    <a class="text font-bold" style="text-decoration: none;">
-        Full report:
+<div class="w-full text-left" style="display: flex;">
+    <!-- Left vertical line -->
+    <div style="border-left: 2.5px solid #808285; padding-left: 16px;  margin-top: 10px">
+        <!-- Full report section -->
+        <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
+            <a class="text font-bold" style="text-decoration: none;">
+                Full report:
+            </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
+            <span style="margin-right: 16px;">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
+                    <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
+                </svg>
+            </span>
+            <a href="https://github.com/FelixHenninger/tapp/blob/main/content/findings/wave4/Wave%204%20Data%20Report.pdf" download class="text-blue-500">
+                Download here (PDF)
+            </a>
+        </div>
+        <br><br>
+        <!-- Citation section -->
+        <a class="text font-bold" style="text-decoration: none;">
+            Citation:
         </a>
-    </div>
-    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
-        <span style="margin-right: 16px;">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
-                <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
-            </svg>
-        </span>
-        <a href="https://github.com/FelixHenninger/tapp/blob/main/content/findings/wave4/Wave%204%20Data%20Report.pdf" download class="text-blue-500">
-            Download here (PDF)
-        </a>
-    </div>
-    <br>
-    <br>
-    <a class="text font-bold" style="text-decoration: none;">
-        Citation:
-    </a>
-    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px; margin-bottom: 0px">
-        <span style="margin-right: 16px;">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
-                <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
-            </svg>
-        </span>
-        Citation: Coelho, I. B., Kononykhina, O., Kellner, S., Leonard, M.M., & TAPP Team. (2024). Policies, practices, and priorities: Transatlantic experts’ perceptions on privacy: Results from the Fourth Wave of the TAPP panel survey. [September 2024].        
-        </a>
+        <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px; margin-bottom: 0px">
+            <span style="margin-right: 16px;">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
+                    <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
+                </svg>
+            </span>
+            Citation: Coelho, I. B., Kononykhina, O., Kellner, S., Leonard, M.M., & TAPP Team. (2024). Policies, practices, and priorities: Transatlantic experts’ perceptions on privacy: Results from the Fourth Wave of the TAPP panel survey. [September 2024].
+        </div>
     </div>
 </div>
 {% end %}
 
 
-{% block_1c_nopad(title="Executive Summary" bg="grey") %}
+
+{% block_1c_nopad(title="Executive Summary" bg="white" class="mt-0") %}
 
 This report presents the findings from the fourth wave of the Transatlantic Privacy Perception (TAPP) panel survey, conducted in May 2024. The survey focused on privacy experts' views on the use of Artificial Intelligence (AI) tools, the presence of governance frameworks, and the impact of privacy concerns on AI adoption across the United States and Europe. A total of 82 participants from academia, the tech industry, and other sectors answered the survey, providing valuable perspectives on the state of AI governance and privacy in their organizations.
 
@@ -62,7 +66,7 @@ This report presents the findings from the fourth wave of the Transatlantic Priv
 {% end %}
 
 {{ anchor(title="Introduction")}}
-{% block_1c_nopad(title="1 Introduction" bg="white") %}
+{% block_1c_nopad(title="1 Introduction" bg="grey") %}
 
 In the privacy arena, actors from academia, policy, law, tech, journalism, and civil society influence
 debates, policies, and practices. The size and diversity of sectors, regional, legal, and cultural contexts in the privacy arena presents a challenge for systematically synthesizing its members' conversations and opinions. The Transatlantic Privacy Perceptions (TAPP) project aims to help companies and policymakers learn more about current and future digital privacy concerns and how they can best be addressed through legislation and technology. To this end, it follows and analyzes developments in privacy actors’ attitudes, expectations, and concerns around current and emerging issues in digital privacy over time. It is an interdisciplinary research project in privacy, survey methodology, and complex sampling techniques at the Universities of Maryland (UMD) and Munich (LMU).
@@ -74,7 +78,7 @@ The latest findings from the Transatlantic Privacy Perception panel highlight th
 {% end %}
 
 {{ anchor(title="Data Collection")}}
-{% block_1c_nopad(title="2 Data Collection" bg="grey") %}
+{% block_1c_nopad(title="2 Data Collection" bg="white") %}
 
 The Wave 4 questionnaire focused on organizational adoption and integration of AI systems (see Appendix for complete questionnaire). Following approval by the University of Maryland Institutional Review Board, fielding began 17 April 2024 and continued until 15 May 2024. 
 
@@ -86,7 +90,7 @@ A total of 895 individuals received email invitations. Of these, 39 returning re
 
 
 {{ anchor(title="Findings")}}
-{% block_1c_nopad(title="3 Findings" bg="white") %}
+{% block_1c_nopad(title="3 Findings" bg="grey") %}
 **3.1 Respondents Profile**
 Wave 4 of the TAPP survey received responses from 77 participants. In terms of professional background, 43% are from academia, and 17% are from the tech industry while 12% are from the private sector, but from non-tech industry (Figure 1). 
 
@@ -178,13 +182,13 @@ The TAPP survey reveals varying levels of familiarity with Responsible AI princi
 {% end %}
 
 {{ anchor(title="Conclusions")}}
-{% block_1c_nopad(title="4 Conclusions and Recommendations" bg="grey") %}
+{% block_1c_nopad(title="4 Conclusions and Recommendations" bg="white") %}
 
 The fourth wave of the Transatlantic Privacy Perception (TAPP) panel survey highlights significant insights into the current state of AI usage and governance among privacy experts in the United States and Europe. The survey reveals that while AI tools are widely adopted, the presence of specific frameworks to govern AI use remains limited. Creating effective Responsible AI frameworks requires the input of those who will use and enforce them. Employee participation in creating those frameworks ensures that diverse perspectives are considered, leading to more comprehensive and effective guidelines. Encouraging broader involvement in the drafting process can also foster a culture of ethical AI use and accountability within organizations (Haipeter et al, 2024). It is promising to see that many experts without current guidelines plan to establish them for future Responsible AI practices. As seen in the results,  privacy concerns significantly impact AI adoption. The recommendations from the panelists to tackle those concerns include the importance of controlling one’s own data, implementing Privacy by Design, and ensuring human involvement and oversight in AI decision-making. Despite the growing importance of AI, relatively few privacy experts are aware of general Responsible AI principles. There is also a considerable amount of varying opinions and uncertainties on how organizations should structure their teams to ensure AI compliance according to our results. In future TAPP surveys, we aim to identify best practices of different Responsible AI approaches by examining which strategies for increasing education on Responsible AI to bridge the gap between awareness and effective governance are most widely regarded as effective.
 
 {% end %}
 
-{% block_1c_nopad(title="References" bg="primary" color="white") %}
+{% block_1c_nopad(title="References" bg="grey") %}
 
 Burle, Caroline, and Diogo Cortiz. "Mapping Principles of Artificial Intelligence." São Paulo: Núcleo de Informação e Coordenação do Ponto BR (2020).
 
