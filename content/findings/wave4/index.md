@@ -9,6 +9,42 @@ extra.sub_nav =["Introduction", "Data Collection", "Findings", "Conclusions"]
 placeholder
 {% end %}
 
+{% block_1c_nopad(title="Download and Citation" bg="grey" class="mb-0") %}
+<div class="w-full text-left">
+    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
+    <a class="text font-bold" style="text-decoration: none;">
+        Full report:
+        </a>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px;">
+        <span style="margin-right: 16px;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
+                <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
+            </svg>
+        </span>
+        <a href="https://github.com/FelixHenninger/tapp/blob/main/content/findings/wave4/Wave%204%20Data%20Report.pdf" download class="text-blue-500">
+            Download here (PDF)
+        </a>
+    </div>
+    <br>
+    <br>
+    <a class="text font-bold" style="text-decoration: none;">
+        Citation:
+    </a>
+    <div style="display: flex; align-items: center; justify-content: left; margin-top: 20px; margin-bottom: 0px">
+        <span style="margin-right: 16px;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 9.52655H11.2609V2.76181H4.43671V0H14V9.52655Z" fill="#071A2D"/>
+                <path d="M11.5818 0.368914L-0.000976562 12.0476L1.93586 14.0005L13.5186 2.32179L11.5818 0.368914Z" fill="#071A2D"/>
+            </svg>
+        </span>
+        Citation: Coelho, I. B., Kononykhina, O., Kellner, S., Leonard, M.M., & TAPP Team. (2024). Policies, practices, and priorities: Transatlantic experts’ perceptions on privacy: Results from the Fourth Wave of the TAPP panel survey. [September 2024].        
+        </a>
+    </div>
+</div>
+{% end %}
+
 
 {% block_1c_nopad(title="Executive Summary" bg="grey") %}
 
