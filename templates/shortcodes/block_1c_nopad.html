@@ -1,7 +1,7 @@
-<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} w-full px-4 sm:px-8 md:px-16 lg:px-32">
+<div class="flex flex-wrap {% if color %}text-{{color}}{% endif %} {% if bg %}bg-{{bg}}{% endif %} w-full px-4 sm:px-8 md:px-16 lg:px-32 mt-0 mb-0">
     {% if title %}
-    <h3 class="text-xl font-bold w-full lg:w-3/5 mx-auto">{{title}}</h3>
+    <h3 class="text-xl font-bold w-full lg:w-3/5 mx-auto mt-0 mb-0">{{title}}</h3>
     {% endif %}
     
-    <div class="text-[18px] leading-tight w-full lg:w-3/5 mx-auto">{% if body %}{{ body | markdown | safe }}{% endif %}</div>
+    <div class="text-[18px] leading-tight w-full lg:w-3/5 mx-auto mt-0 mb-0">{% if body %}{{ body | markdown | safe }}{% endif %}</div>
 </div>
